@@ -1,0 +1,91 @@
+{
+    "name": "Strange Nothing",
+    "race": "Shadow",
+    "class": "-",
+    "description": "<p>Nothing to see here!<\/p>",
+    "alignment": "Neutral Good",
+    "vision": {
+        "type": "Darkvision",
+        "range": 120
+    },
+    "temperaments": [],
+    "languages": [
+        "Common",
+        "Dwarvish",
+        "Abyssal"
+    ],
+    "damageModifiers": {
+        "resistances": [
+            "Necrotic",
+            "Cold",
+            "Fire",
+            "Radiant"
+        ],
+        "immunities": [
+            "Force"
+        ],
+        "vulnerabilities": [
+            "Slashing"
+        ],
+        "affinities": []
+    },
+    "stats": {
+        "hitPoints": 13,
+        "armourClass": 13,
+        "speed": 30,
+        "initiative": 0,
+        "passivePerception": 12,
+        "attributes": {
+            "strength": {
+                "score": 2,
+                "modifier": -4
+            },
+            "dexterity": {
+                "score": 8,
+                "modifier": -1
+            },
+            "constitution": {
+                "score": 4,
+                "modifier": -3
+            },
+            "intelligence": {
+                "score": 12,
+                "modifier": 1
+            },
+            "wisdom": {
+                "score": 18,
+                "modifier": 4
+            },
+            "charisma": {
+                "score": 6,
+                "modifier": -2
+            }
+        }
+    },
+    "skills": {
+        "acrobatics": 4,
+        "animalHandling": 2,
+        "arcana": 0,
+        "athletics": 0,
+        "deception": 0,
+        "history": 0,
+        "insight": 0,
+        "intimidation": 2,
+        "investigation": 0,
+        "medicine": 0,
+        "nature": 2,
+        "perception": 0,
+        "performance": 0,
+        "persuasion": 0,
+        "religion": 0,
+        "sleightOfHand": 4,
+        "stealth": 10,
+        "survival": 0
+    },
+    "abilities": {
+        "attacks": [],
+        "spells": [],
+        "actives": [],
+        "passives": []
+    }
+}

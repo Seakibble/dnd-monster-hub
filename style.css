@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h3, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/* Custom Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background: #f2f2f2;
+  color: #333;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: 1.7em;
+  padding: 0.2em 1em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  padding: 5px 0;
+  font-size: 1.5em;
+  border-bottom: 2px solid #1d98ff;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: bold;
+  color: #777;
+}
+
+.display {
+  margin: 20px;
+  display: grid;
+  grid-template: auto / auto auto;
+  grid-template-areas: "sidebar container";
+  grid-gap: 20px;
+}
+
+.header {
+  background: white;
+  box-shadow: 0 2px 3px #999;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.subtle {
+  font-style: italic;
+  color: #777;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 1.2em;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  min-width: 250px;
+}
+
+.links {
+  display: grid;
+}
+
+.creature_link {
+  font-size: 1.1em;
+  padding: 0 0.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.creature_link:hover {
+  background: #f2f2f2;
+}
+
+.creature_link.active {
+  font-weight: bold;
+}
+
+.container {
+  grid-area: container;
+  display: grid;
+  grid-template: auto / auto;
+  justify-items: center;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 3px #999;
+  padding: 20px;
+}
+
+.creature__name {
+  padding-bottom: 15px;
+}
+
+.creature__details {
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  grid-template-areas: "overview description abilities";
+  grid-gap: 0 25px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .creature__details {
+    grid-template: auto auto / 1fr 1fr;
+    grid-template-areas:
+            "overview abilities"
+            "description abilities";
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .creature__details {
+    grid-template: auto auto auto/ 1fr;
+    grid-template-areas:
+            "overview"
+            "description"
+            "abilities";
+  }
+}
+
+.page__overview {
+  grid-area: overview;
+}
+
+.page__abilities {
+  grid-area: abilities;
+}
+
+.page__description {
+  grid-area: description;
+}
+
+.section {
+  border-bottom: 1px solid #e7e7e7;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+
+.creature__general {
+  grid-template: auto / 1fr 1fr 1fr;
+}
+
+.creature__stats {
+  grid-gap: 30px;
+  grid-template: auto auto / 1fr;
+}
+.creature__secondary,
+.stats__primary {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+          "HP AC Speed" auto / 1fr 1fr 1fr;
+}
+
+.stats__attributes {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.creature__damage_modifier,
+.creature__skills,
+.creature__languages,
+.creature__temperament {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: auto / 1fr 3fr;
+}
+
+.ability {
+  padding-left: 1em;
+  border-left: 4px solid white;
+}
+
+.ability__attacks {
+  border-color: #d81f22;
+}
+
+.ability__passives {
+  border-color: #70ee2d;
+}
+
+.ability__actives {
+  border-color: #1cd5ce;
+}
+
+.ability__spells {
+  border-color: #9541fa;
+}
+
+.grid-box {
+  display: grid;
+  grid-template: auto / 1fr;
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.list-two-col {
+  column-count: 2;
+}
+
+.modifier_positive {
+  color: #45a522;
+}
+
+.modifier_negative {
+  color: #c03613;
+}
+
+.creature__damage_modifiers {
+  display: grid;
+  grid-template: auto / auto;
+}
+
+.creature__race,
+.creature__class,
+.creature__alignment {
+  justify-self: center;
+  align-self: center;
+}

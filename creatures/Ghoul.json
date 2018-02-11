@@ -1,0 +1,95 @@
+{
+    "name": "Ghoul",
+    "race": "Half-Magimecha",
+    "class": "-",
+    "description": "<p>Half-magimechanoids are people who have been cursed to turn into partial magimechanoids. They never fully turn magimechanical. They are plagued by the wild nature of animalistic magimechanoids while also having some awareness of their situation but no way to fix it. They are piteous creatures of strong emotions and little sense; anger, sadness, and bitterness.<p><\/p>The further along a half-magimechanoid is in their condition, the less likely they are able to be healed by magic. Those who have felt compelled to join the wild are generally too far gone. Using the last vestiges of their social instinct, half-magimechanoids will generally find each other and work together.<\/p>",
+    "alignment": "Unaligned",
+    "vision": {
+        "type": "Normal",
+        "range": 0
+    },
+    "temperaments": [
+        "Unpredictable",
+        "Changeable"
+    ],
+    "languages": [
+        "Magimecha",
+        "???"
+    ],
+    "damageModifiers": {
+        "resistances": [],
+        "immunities": [],
+        "vulnerabilities": [],
+        "affinities": []
+    },
+    "stats": {
+        "hitPoints": 13,
+        "armourClass": 13,
+        "speed": 30,
+        "initiative": 0,
+        "passivePerception": 12,
+        "attributes": {
+            "strength": {
+                "score": 10,
+                "modifier": 0
+            },
+            "dexterity": {
+                "score": 16,
+                "modifier": 3
+            },
+            "constitution": {
+                "score": 10,
+                "modifier": 0
+            },
+            "intelligence": {
+                "score": 10,
+                "modifier": 0
+            },
+            "wisdom": {
+                "score": 10,
+                "modifier": 0
+            },
+            "charisma": {
+                "score": 10,
+                "modifier": 0
+            }
+        }
+    },
+    "skills": {
+        "acrobatics": 0,
+        "animalHandling": 0,
+        "arcana": 0,
+        "athletics": 0,
+        "deception": 0,
+        "history": 0,
+        "insight": 0,
+        "intimidation": 4,
+        "investigation": 0,
+        "medicine": 0,
+        "nature": 0,
+        "perception": 2,
+        "performance": 0,
+        "persuasion": 0,
+        "religion": 0,
+        "sleightOfHand": 0,
+        "stealth": 0,
+        "survival": 0
+    },
+    "abilities": {
+        "attacks": {
+            "Claw": "+5 to hit, 1d6 + $DEX slashing damage",
+            "Arm Blaster": "+5 to hit, range 30\/120 ft., 1d6 + $DEX radiant damage"
+        },
+        "spells": {
+            "Mood Shift: Calm": "+5 on Stealth"
+        },
+        "actives": {
+            "Mood Shift: Calm": "+5 on Stealth"
+        },
+        "passives": {
+            "Mood Shift: Calm": "+5 on Stealth",
+            "Mood Shift: Rage": "Multiattack (2 claw attacks or 2 blaster attacks)",
+            "Ambusher": "+5 to hit against surprised creatures"
+        }
+    }
+}
